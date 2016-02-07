@@ -1,42 +1,19 @@
+# This is a demo Django app
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+The goal is to learn the basics of Django. Clone this app to have a working example.
 
+## Username / Password
 
-Welcome to your Django project on Cloud9 IDE!
+There are two users created, matt and lestertester. I don't know the passwords for these users. 
+To create a new admin user, from the terminal type:
 
-Your Django project is already fully setup. Just click the "Run" button to start
-the application. On first run you will be asked to create an admin user. You can
-access your application from 'https://fitness-tracker-newz20001.c9users.io/' and the admin page from 
-'https://fitness-tracker-newz20001.c9users.io/admin'.
-
-## Starting from the Terminal
-
-In case you want to run your Django application from the terminal just run:
-
-1) Run syncdb command to sync models to database and create Django's default superuser and auth system
-
-    $ python manage.py migrate
-
-2) Run Django
-
-    $ python manage.py runserver $IP:$PORT
+    python manage.py createsuperuser
     
-## Configuration
+and follow the instructions to create a new user.
 
-You can configure your Python version and `PYTHONPATH` used in
-Cloud9 > Preferences > Project Settings > Language Support.
+If you'd like to learn more about Django, check out:
 
-## Support & Documentation
+ * The [official getting started guide](https://www.djangoproject.com/start/)
+ * My [Learning Django Web Development](https://www.packtpub.com/web-development/learning-django-web-development-video) video course published by Packt and sometimes available discounted at [Udemy](http://click.linksynergy.com/fs-bin/click?id=ljrATmD8Wak&subid=&offerid=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Flearning-django-web-development%2F)
+ * My [Mastering Django Web Development](https://www.packtpub.com/web-development/mastering-django-web-development-video) video course published by Packt
 
-Django docs can be found at https://www.djangoproject.com/
-
-You may also want to follow the Django tutorial to create your first application:
-https://docs.djangoproject.com/en/1.9/intro/tutorial01/
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
