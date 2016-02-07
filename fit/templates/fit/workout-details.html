@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+
+{% block title %}Workout Details for {{ object }}{% endblock %}
+
+{% block body %}
+<h1>Workout details:</h1>
+<ul>
+    <li><strong>Person</strong>: {{ object.user }}</li>
+    <li><strong>Workout type</strong>: {{ object.exercise }}</li>
+    <li><strong>Activity time</strong>: {{ object.ts }}</li>
+    <li><strong>Duration</strong>: {{ object.duration }}</li>
+    <li><strong>Distance</strong>: {{ object.distance }}</li>
+    <li><strong>Notes</strong>: {{ object.notes }}</li>
+</ul>
+{% endblock %}

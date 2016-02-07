@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block body %}
+<h1>Workouts:</h1>
+<ul>
+{% for workout in object_list %}
+    <li>
+        <a href="{% url 'workout-detail' workout.id %}">
+        {{ workout.user|title }} did a {{ workout.exercise.singular }} on {{ workout.ts }} for {{ workout.duration }} minutes.
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
